@@ -132,6 +132,7 @@
     <Content Include="Views\Register\RegisterIndex.cshtml" />
     <Content Include="Views\MyProfile\MyProfileIndex.cshtml" />
     <Content Include="Views\UserDashboard\UserDashboardIndex.cshtml" />
+    <Content Include="Error.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
