@@ -9,6 +9,7 @@ namespace CodeTogether.Controllers
     public class MyProfileController : Controller
     {
         // GET: MyProfile
+        [Authorize]
         [Route("MyProfile")]
         public ActionResult MyProfileIndex()
         {
