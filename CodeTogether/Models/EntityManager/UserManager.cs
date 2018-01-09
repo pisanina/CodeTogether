@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CodeTogether.Models.ViewModel;
 using System.Linq;
-using System.Web;
 
 namespace CodeTogether.Models.EntityManager
 {
@@ -16,6 +14,23 @@ namespace CodeTogether.Models.EntityManager
                     return user.FirstOrDefault().UserPassword;
                 else
                     return string.Empty;
+            }
+        }
+
+        public int Register(RegistrationViewModel Data)
+        {
+            using (UserDataContext db = new UserDataContext())
+            {
+                if (db.tblUserData.Any(o => o.UserName.Equals(Data.UserName)))
+                    return 1;
+                var UserData = Data.TotblUserData();
+                var User = db.tblUserData.Add(UserData);
+                tblAddress Adress = new tblAddress();
+                Adress.ID = User.ID;
+
+                db.tblAddress.Add(Adress);
+                db.SaveChanges();
+                return 0;
             }
         }
     }

@@ -218,6 +218,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UserDataModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModel\RegistrationViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
