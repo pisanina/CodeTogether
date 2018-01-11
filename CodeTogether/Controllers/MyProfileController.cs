@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using CodeTogether.Models.EntityManager;
+using CodeTogether.Models.ViewModel;
 using System.Web.Mvc;
 
 namespace CodeTogether.Controllers
@@ -10,10 +8,27 @@ namespace CodeTogether.Controllers
     {
         // GET: MyProfile
         [Authorize]
-        [Route("MyProfile")]
         public ActionResult MyProfileIndex()
         {
-            return View();
+            UserManager US = new UserManager();
+            return View(US.MyProfile());
+        }
+
+        [Authorize]
+        [HttpPost]
+        public ActionResult MyProfileIndex(MyProfileViewModel tUD)
+        {
+            if (ModelState.IsValid)
+            {
+                UserManager US = new UserManager();
+                if (US.SaveProfile(tUD) == 1)
+                    ModelState.AddModelError("", "Confirm password dont mach");
+                else
+                {
+                    tUD.SaveMessage = "Changes were saved";
+                }
+            }
+            return View(tUD);
         }
     }
 }

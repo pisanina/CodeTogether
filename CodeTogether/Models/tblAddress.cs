@@ -20,12 +20,12 @@ namespace CodeTogether.Models
             this.tblUserData = new HashSet<tblUserData>();
         }
     
-        public int ID { get; set; }
+        public int ID         { get; set; }
         public string Country { get; set; }
-        public string Region { get; set; }
-        public string City { get; set; }
+        public string Region  { get; set; }
+        public string City    { get; set; }
         public string ZipCode { get; set; }
-        public string Street { get; set; }
+        public string Street  { get; set; }
         public Nullable<int> Number { get; set; }
         public Nullable<int> ApartmentNumber { get; set; }
     

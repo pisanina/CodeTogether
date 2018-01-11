@@ -16,7 +16,7 @@ namespace CodeTogether.Models.ViewModel
         [Required(ErrorMessage = "Please provide password", AllowEmptyStrings = false)]
         [DataType(DataType.Password)]
         [StringLength(50, MinimumLength = 8,
-        ErrorMessage = "Password must be 8 char long with some uppercase and numbers")]
+            ErrorMessage = "Password must be 8 char long with some uppercase and numbers")]
         public string UserPassword { get; set; }
 
         [Display(Name = "Confirm Password")]
@@ -32,5 +32,6 @@ namespace CodeTogether.Models.ViewModel
             UserData.UserPassword = this.UserPassword;
             return UserData;
         }
+       
     }
 }

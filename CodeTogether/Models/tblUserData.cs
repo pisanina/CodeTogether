@@ -15,15 +15,15 @@ namespace CodeTogether.Models
 
     public partial class tblUserData
     {
-        public int ID { get; set; }
-        public string UserName { get; set; }
-        public string Email { get; set; }
+        public int ID              { get; set; }
+        public string UserName     { get; set; }
+        public string Email        { get; set; }
         [DataType(DataType.Password)]
         public string UserPassword { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Gender { get; set; }
-        public int AddressID { get; set; }
+        public string FirstName    { get; set; }
+        public string LastName     { get; set; }
+        public string Gender       { get; set; }
+        public int AddressID       { get; set; }
         public Nullable<System.DateTime> BirthDate { get; set; }
 
         public virtual tblAddress tblAddress { get; set; }
