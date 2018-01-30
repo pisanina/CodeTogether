@@ -7,6 +7,8 @@ namespace CodeTogether.Controllers
 {
     public class RegisterController : Controller
     {
+
+        [Route("Register")]
         public ActionResult RegisterIndex()
         {
             return View();

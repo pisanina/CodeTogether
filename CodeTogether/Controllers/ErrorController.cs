@@ -6,9 +6,14 @@ namespace CodeTogether.Controllers
     {
         // GET: Error
 
+        public ActionResult Found()
+        {
+            return View();
+        }
         public ActionResult NotFound()
         {
             return View();
         }
+      
     }
 }

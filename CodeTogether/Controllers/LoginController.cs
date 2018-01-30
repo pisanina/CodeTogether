@@ -8,7 +8,7 @@ namespace CodeTogether.Controllers
     public class LoginController : Controller
     {
         // Get: Login
-        //[Route("Login")]
+        [Route("Login")]
 
         public ActionResult LoginIndex()
         {
