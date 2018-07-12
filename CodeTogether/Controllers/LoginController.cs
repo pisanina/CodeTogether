@@ -30,7 +30,7 @@ namespace CodeTogether.Controllers
                     if (tUD.UserPassword.Equals(password))
                     {
                         FormsAuthentication.SetAuthCookie(tUD.UserName, false);
-                        return RedirectToAction("MyProfileIndex", "MyProfile");
+                        return RedirectToAction("MySettingsIndex", "MyProfile");
                     }
                     else
                     {

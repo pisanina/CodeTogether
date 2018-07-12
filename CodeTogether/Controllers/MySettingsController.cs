@@ -4,14 +4,14 @@ using System.Web.Mvc;
 
 namespace CodeTogether.Controllers
 {
-    public class MyProfileController : Controller
+    public class MySettingsController : Controller
     {
         // GET: MyProfile
         [Authorize]
         public ActionResult MySettingsIndex()
         {
             UserManager US = new UserManager();
-            return View(US.MyProfile());
+            return View(US.MySettings());
         }
 
         [Authorize]

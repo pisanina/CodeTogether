@@ -25,7 +25,7 @@ namespace CodeTogether.Controllers
                 else
                 {
                     FormsAuthentication.SetAuthCookie(tUD.UserName, false);
-                    return RedirectToAction("MyProfileIndex", "MyProfile");
+                    return RedirectToAction("MySettingsIndex", "MyProfile");
                 }
             }
             return View(tUD);

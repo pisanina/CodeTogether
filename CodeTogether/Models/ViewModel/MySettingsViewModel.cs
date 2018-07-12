@@ -6,7 +6,7 @@ using System.Web;
 
 namespace CodeTogether.Models.ViewModel
 {
-    public class MyProfileViewModel
+    public class MySettingsViewModel
     {
         [Display(Name = "Name")]
         [Required(ErrorMessage = "Please provide name", AllowEmptyStrings = false)]

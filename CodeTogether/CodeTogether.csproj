@@ -229,7 +229,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UserDataModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\ViewModel\MyProfileViewModel.cs" />
+    <Compile Include="Models\ViewModel\MySettingsViewModel.cs" />
     <Compile Include="Models\ViewModel\RegistrationViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -243,7 +243,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\LoginIndex.cshtml" />
     <Content Include="Views\Register\RegisterIndex.cshtml" />
-    <Content Include="Views\MyProfile\MyProfileIndex.cshtml" />
+    <Content Include="Views\MyProfile\MySettingsIndex.cshtml" />
     <Content Include="Views\UserDashboard\UserDashboardIndex.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />

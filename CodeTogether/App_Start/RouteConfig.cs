@@ -45,7 +45,7 @@ namespace CodeTogether
              name: "MyProfile",
              url: "MyProfile/{action}/{id}",
 
-             defaults: new { controller = "MyProfile", action = "MyProfileIndex", id = UrlParameter.Optional }
+             defaults: new { controller = "MyProfile", action = "MySettingsIndex", id = UrlParameter.Optional }
             );
 
         

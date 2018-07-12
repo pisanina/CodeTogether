@@ -40,9 +40,9 @@ namespace CodeTogether.Models.EntityManager
             }
         }
 
-        public MyProfileViewModel MyProfile()
+        public MySettingsViewModel MyProfile()
         {
-            MyProfileViewModel MyProfileView = new MyProfileViewModel();
+            MySettingsViewModel MyProfileView = new MySettingsViewModel();
             using (UserDataContext db = new UserDataContext())
             {
                
@@ -71,7 +71,7 @@ namespace CodeTogether.Models.EntityManager
                 return MyProfileView;
         }
 
-        public int SaveProfile(MyProfileViewModel Data)
+        public int SaveProfile(MySettingsViewModel Data)
         {
             using (UserDataContext db = new UserDataContext())
             {
